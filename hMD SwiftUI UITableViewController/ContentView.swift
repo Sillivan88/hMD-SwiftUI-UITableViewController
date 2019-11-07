@@ -9,13 +9,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text("MyTableViewController")
+                .font(.largeTitle)
+                .padding()
+            Divider()
+            MyTableView()
+            Divider()
+            Text("This view is based on UIKit.")
+                .font(.footnote)
+                .foregroundColor(.gray)
+        }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
+    
     static var previews: some View {
         ContentView()
     }
+    
 }
