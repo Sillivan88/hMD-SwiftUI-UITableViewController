@@ -10,8 +10,6 @@ import UIKit
 
 class MyTableViewController: UITableViewController {
     
-    // MARK: - Methods
-    
     static func newInstance() -> MyTableViewController {
         let tableViewStoryboard = UIStoryboard(name: "MyTableView", bundle: nil)
         let myTableViewController = tableViewStoryboard.instantiateInitialViewController() as! MyTableViewController
@@ -19,8 +17,6 @@ class MyTableViewController: UITableViewController {
     }
     
 }
-
-// MARK: - UITableViewDataSource
 
 extension MyTableViewController {
     
